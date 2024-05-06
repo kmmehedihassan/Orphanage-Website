@@ -1,22 +1,11 @@
 'use strict';
 
-
-
-/**
- * add event listener on multiple elements
- */
-
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
   }
 }
 
-
-
-/**
- * NAVBAR TOGGLE FOR MOBILE
- */
 
 const navbar = document.querySelector("[sidebar-nav]");
 const navTogglers = document.querySelectorAll("[sidebar-nav-toggler]");
@@ -30,13 +19,6 @@ const toggleNavbar = function () {
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
-
-
-/**
- * HEADER
- * active header when window scroll down to 100px
- */
-
 const header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", function () {
@@ -47,11 +29,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
-/**
- * ACCORDION
- */
 
 const accordions = document.querySelectorAll("[data-accordion]");
 
