@@ -9,17 +9,24 @@ body{
     background-color: rgb(236, 238, 255);
 }
 
-.container{
+.donate{
+    background-image: url("../images/donate-us.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+.donate-container{
+    opacity: 95%;
     padding: 2%;
-    margin-top: 10%;
+    margin-top: 6%;
     margin-left: 35%;
     margin-right: 35%;
-    margin-bottom: 10%;
     background-color: white;
     border-radius: 12px;
 }
 
-.container p:first-child{
+.donate-container p:first-child{
     font-size: 17px;
     font-weight: 600;
 }
@@ -64,7 +71,7 @@ p:nth-child(3){
 }
 
 .money:hover{
-    background-color: black;
+    background-color: hsla(234, 50%, 64%, 1);
     color: white;
 }
 
@@ -72,9 +79,14 @@ p:nth-child(3){
     margin-top: 5%;
 }
 
-.input{
+.donate-input{
     margin-top: 5%;
 }
+
+/* #footer input {
+    all:unset;
+  } */
+
 
 input[type="text"]{
     margin-top: 2%;
@@ -82,7 +94,7 @@ input[type="text"]{
     height: 30px;
     padding-left: 10px;
     font-size: 15px;
-
+   
     border-radius: 5px;
 }
 
@@ -91,25 +103,28 @@ p:nth-child(7){
     color: blue;
 }
 
-button{
+.donate-button{
     width: 100%;
     height: 30px;
     margin-top: 5%;
     font-size: 15px;
     font-weight: 600;
     color: white;
-    background-color: rgb(8, 8, 8);
+    background-color: hsla(234, 50%, 64%, 1);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-button:hover{
-    color: blue;
-}
+
 p:nth-child(9){
     margin-top: 10%;
 }
 .blue{
+    display: inline;
     color: blue;
     text-decoration: underline;
+}
+
+footer{
+    margin-top: 0% !important;
 }
