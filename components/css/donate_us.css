@@ -34,7 +34,7 @@ body{
 .time{
     margin-top: 3%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 4%;
     background-color: rgb(236, 238, 255);
     border-radius: 10px;

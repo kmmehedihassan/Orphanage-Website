@@ -144,7 +144,6 @@ section {
   font-size: 16px;
   margin: 10px 0;
   pointer-events: none;
-  transition: 0.5s;
   color: #666;
 }
 
@@ -162,7 +161,6 @@ section {
   color: #FFF;
   border: none;
   cursor: pointer;
-  transition: 0.5s;
 }
 
 .contact-form .input-box input[type="submit"]:hover
