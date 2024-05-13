@@ -83,11 +83,6 @@ p:nth-child(3){
     margin-top: 5%;
 }
 
-/* #footer input {
-    all:unset;
-  } */
-
-
 input[type="text"]{
     margin-top: 2%;
     width: 100%;

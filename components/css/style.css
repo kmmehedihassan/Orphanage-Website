@@ -35,8 +35,6 @@ button { cursor: pointer; }
 
 ion-icon { pointer-events: none; }
 
-address { font-style: normal; }
-
 html {
   font-family: 'Manrope', sans-serif;
   font-size: 10px;
@@ -49,9 +47,13 @@ body {
   line-height: 1.7;
 }
 
-body.nav-active { overflow: hidden; }
+body.nav-active { 
+  overflow: hidden; 
+}
 
-.container { padding-inline: 16px; }
+.container { 
+  padding-inline: 16px; 
+}
 
 .social-list {
   display: flex;
@@ -59,8 +61,8 @@ body.nav-active { overflow: hidden; }
   gap: 12px;
 }
 
-.social-media-link {
-  font-size: 2rem;
+.media {
+  font-size: 2.5rem;
 }
 
 .section { padding-block: 90px; }
@@ -81,16 +83,6 @@ body.nav-active { overflow: hidden; }
   line-height: 1.3;
 }
 
-.h1 { font-size: var(2.8rem); }
-
-.h2 { font-size: var(2.6rem); }
-
-.h3 { font-size: 2.2rem; }
-
-.h4 { font-size: 1.9rem; }
-
-.h5 { font-size: 1.7rem; }
-
 .btn {
   color: rgb(255, 255, 255);
   font-size: 1.7rem;
@@ -103,12 +95,11 @@ body.nav-active { overflow: hidden; }
 
 .btn-primary,
 .btn-outline:is(:hover, :focus-visible) {
-  background-color: hsl(221, 74%, 92%);
+  background-color: hsl(234, 50%, 64%, 1);
   color: rgb(52, 62, 81);
 } 
 
 .img-holder {
-  aspect-ratio: var(--width) / var(--height);
   background-color: rgb(192, 192, 192);
   overflow: hidden;
 }
@@ -121,13 +112,12 @@ body.nav-active { overflow: hidden; }
 
 .section-subtitle {
   font-size: 1.5rem;
-  text-transform: uppercase;
   color: hsla(234, 50%, 64%, 1);
   font-weight: 700;
   margin-block-end: 16px;
 }
 
-.grid-list {
+.gridding {
   display: grid;
   gap: 25px;
 }
@@ -173,16 +163,9 @@ body.nav-active { overflow: hidden; }
   width: 100%;
   height: 100vh;
   padding: 30px;
-  padding-block-end: 40px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  z-index: 2;
-  visibility: hidden;
-  flex-wrap: nowrap;
-  align-content: space-around;
-  align-items: baseline;
-  justify-content: space-between;
+  gap: 35px;
 }
 
 .navbar.active {
@@ -304,26 +287,26 @@ body.nav-active { overflow: hidden; }
 
 .about .section-title { margin-block-end: 35px; }
 
-.feature .container {
+.help-sec .container {
   display: grid;
   gap: 50px;
 }
 
-.feature .section-text { margin-block: 25px 30px; }
+.help-sec .section-text { margin-block: 25px 30px; }
 
-.feature-list {
+.help-sec-list {
   padding-top: 10%;
   display: grid;
   gap: 15px;
 }
 
-.feature-card {
+.help-sec-card {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.feature-card .card-icon {
+.help-sec-card .card-icon {
   font-size: 1.4rem;
   padding: 4px;
   border-radius: 50%;
@@ -336,28 +319,27 @@ body.nav-active { overflow: hidden; }
   color: hsla(0, 0%, 79%, 1);
 }
 
-.footer-box .footer-text { margin-block: 20px; }
+.footer-box .footer-text { margin-block: 15px; }
 
 .footer .social-list { color: hsla(0, 0%, 100%, 1); }
 
-.footer-list-title {
+.footer-items-title {
   color: rgb(255, 255, 255);
   margin-block-end: 16px;
 }
 
-.footer-link {
+.footer-contacts {
   padding-block: 4px;
 }
 
-.footer-link:is(:hover, :focus-visible) { color: hsla(234, 50%, 64%, 1); }
+.footer-contacts:is(:hover, :focus-visible) { color: hsla(234, 50%, 64%, 1); }
 
-.input-wrapper {
+.join-input {
   position: relative;
   margin-block-start: 25px;
 }
 
 .input-field {
-  background-color: var(--white_a3);
   color: rgb(201, 201, 201);
   font-size: 1.5rem;
   padding: 12px 16px;
@@ -400,7 +382,7 @@ body.nav-active { overflow: hidden; }
 
   .container { max-width: 720px; }
 
-  .grid-list { grid-template-columns: 1fr 1fr; }
+  .gridding { grid-template-columns: 1fr 1fr; }
 
   .header .btn {
     display: block;
@@ -420,7 +402,10 @@ body.nav-active { overflow: hidden; }
     margin-inline: auto;
   }
 
-  .banner-text { --fs-5: 2rem; }
+  .banner-text {
+    font-size: 2rem;
+}
+
 
   .compo .section-title {
     max-width: 30ch;
@@ -433,12 +418,10 @@ body.nav-active { overflow: hidden; }
     align-items: center;
   }
 
-  .feature .container {
-    grid-template-columns: 0.7fr 1fr;
+  .help-sec .container {
+    grid-template-columns: 1fr 1fr;
     align-items: center;
   }
-
-  .feature-banner { order: 1; }
 
 }
 
@@ -489,7 +472,7 @@ body.nav-active { overflow: hidden; }
 
   .btn-container { justify-content: flex-start; }
 
-  .footer .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .footer .gridding { grid-template-columns: repeat(4, 1fr); }
 
 }
 
@@ -499,7 +482,7 @@ body.nav-active { overflow: hidden; }
 
   .banner-text { padding-inline-end: 100px; }
 
-  .compo .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .compo .gridding { grid-template-columns: repeat(4, 1fr); }
 
 }
 

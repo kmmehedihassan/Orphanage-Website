@@ -9,7 +9,6 @@
   <title>Orphanage</title>
   <meta name="title" content="Orphanage">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./components/css/contact_us.css">
@@ -28,9 +27,9 @@
         </a>
       </h2>
       
-      <nav class="navbar" sidebar-nav>
+      <nav class="navbar" navbar-menu-open>
         <div class="navbar-top">
-          <button class="navbar-close-btn" sidebar-nav-toggler>
+          <button class="navbar-close-btn" navbar-menu-open-active>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
         </div>
@@ -53,98 +52,105 @@
 
       <a href="./donate_us.html" class="btn btn-primary">Donate Here</a>
 
-      <button class="navbar-open-btn" sidebar-nav-toggler>
+      <button class="navbar-open-btn" navbar-menu-open-active>
         <ion-icon name="menu" aria-hidden="true"></ion-icon>
       </button>
 
-      <div class="overlay" sidebar-nav-toggler data-overlay></div>
+      <div class="overlay" navbar-menu-open-active ></div>
 
     </div>
   </header>
 
   <main>
     <section>
-    
       <div class="section-header">
         <div class="form-container">
           <h2>Contact Us</h2>
           <p>Join us in our mission to provide hope and care to orphaned children. Your support can make a world of difference. Connect with us today to be a part of something meaningful and impactful.By reaching out to us, you're contributing to a brighter future for vulnerable children, ensuring they receive the love and support they deserve.</p>
         </div>
       </div>
-      
       <div class="form-container">
-        <div class="row">
-          
+        <div class="row">  
           <div class="contact-info">
             <div class="contact-info-item">
               <div class="contact-info-icon">
                 <i class="fas fa-home"></i>
-              </div>
-              
+              </div>      
               <div class="contact-info-content">
                 <h4>Address</h4>
                 <p>Waterloo Station, Waterloo Rd, <br/> London, United Kingdom, <br/>55060</p>
               </div>
-            </div>
-            
+            </div>    
             <div class="contact-info-item">
               <div class="contact-info-icon">
                 <i class="fas fa-phone"></i>
-              </div>
-              
+              </div>      
               <div class="contact-info-content">
                 <h4>Phone</h4>
                 <p>+44 708 809 0123</p>
               </div>
-            </div>
-            
+            </div>  
             <div class="contact-info-item">
               <div class="contact-info-icon">
                 <i class="fas fa-envelope"></i>
-              </div>
-              
+              </div>     
               <div class="contact-info-content">
                 <h4>Email</h4>
                <p>orphanage@email.com</p>
               </div>
             </div>
-          </div>
-          
+          </div>  
           <div class="contact-form">
             <form action="" id="contact-form">
               <h2>Send Message</h2>
               <div class="input-box">
-                <input type="text" required="true" name="">
+                <input type="text" required="true">
                 <span>Full Name</span>
-              </div>
-              
+              </div>         
               <div class="input-box">
-                <input type="email" required="true" name="">
+                <input type="email" required="true">
                 <span>Email</span>
-              </div>
-              
+              </div>      
               <div class="input-box">
-                <textarea required="true" name=""></textarea>
+                <textarea required="true"></textarea>
                 <span>Type your Message...</span>
-              </div>
-              
+              </div>      
               <div class="input-box">
-                <input type="submit" value="Send" name="">
+                <input type="submit" value="Send">
               </div>
             </form>
-          </div>
-          
+          </div>  
         </div>
       </div>
     </section>
   </main>
+  <section class="table">
+    <table>
+      <tr>
+        <th>Address</th>
+        <th>Phone</th>
+      </tr>
+      <tr>
+        <td>10 Downing Street, Westminster,<br> London, United Kingdom, SW1A 2AA</td>
+        <td>+44 20 7925 0918</td>
+      </tr>
+      <tr>
+        <td>Buckingham Palace, Westminster,<br> London, United Kingdom, SW1A 1AA</td>
+        <td>+44 303 123 7300</td>
+      </tr>
+      <tr>
+        <td>Tower Bridge, Tower Bridge Rd,<br> London, United Kingdom, SE1 2UP</td>
+        <td>+44 20 7403 3761</td>
+      </tr>
+    </table>      
+  </section>
 
   <footer class="footer">
-    <div class="container grid-list">
+    <div class="container gridding">
 
       <div class="footer-box">
 
-        <p class="h4 footer-list-title">Orphanage</p>
+        <p class="h4 footer-items-title">Orphanage</p>
 
         <p class="footer-text">
           &copy; 2024 orphanage. <br> All rights reserved.
@@ -153,25 +159,25 @@
         <ul class="social-list">
 
           <li>
-            <a href="#" class="social-media-link">
+            <a href="#" class="media">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-media-link">
+            <a href="#" class="media">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-media-link">
+            <a href="#" class="media">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-media-link">
+            <a href="#" class="media">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
@@ -180,10 +186,10 @@
 
       </div>
 
-      <ul class="footer-list">
+      <ul class="footer-items">
 
         <li>
-          <p class="h4 footer-list-title">Contacts</p>
+          <p class="h4 footer-items-title">Contacts</p>
         </li>
 
         <li>
@@ -193,40 +199,40 @@
         </li>
 
         <li>
-          <a href="mailto:info@email.com" class="footer-link">info@email.com</a>
+          <a href="mailto:info@email.com" class="footer-contacts">info@email.com</a>
         </li>
 
         <li>
-          <a href="tel:+447088090123" class="footer-link">+44 708 809 0123</a>
+          <a href="tel:+447088090123" class="footer-contacts">+44 708 809 0123</a>
         </li>
 
       </ul>
 
-      <ul class="footer-list">
+      <ul class="footer-items">
 
         <li>
-          <p class="h4 footer-list-title">Learn More</p>
+          <p class="h4 footer-items-title">Learn More</p>
         </li>
         <li>
-          <a href="#" class="footer-link">About Us</a>
+          <a href="#" class="footer-contacts">About Us</a>
         </li>
         <li>
-          <a href="#" class="footer-link"></a>
+          <a href="#" class="footer-contacts"></a>
         </li>
         <li>
-          <a href="#" class="footer-link"></a>
+          <a href="#" class="footer-contacts"></a>
         </li>
         <li>
-          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-contacts">Privacy Policy</a>
         </li>
 
       </ul>
 
-      <div class="footer-list">
+      <div class="footer-items">
 
-        <p class="h4 footer-list-title">Join Our Website</p>
+        <p class="h4 footer-items-title">Join Our Website</p>
 
-        <form action="" class="input-wrapper">
+        <form action="" class="join-input">
           <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
           <button type="submit" class="submit-btn">Join</button>
         </form>
@@ -239,7 +245,6 @@
   <script src="./components/js/script.js"></script>
   <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
